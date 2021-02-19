@@ -93,16 +93,16 @@ let setAlarmBtn = document.getElementById('setAlarmBtn');
   let playSound = () => {
     let setAlarmH1Text = document.getElementById('setAlarmH1Text');
     alarmSound.play();
-    // let setAlarmH1Text = document.getElementById('setAlarmH1Text');
+    let setAlarmH1Text = document.getElementById('setAlarmH1Text');
     let alarmDisplay = document.querySelector('#alarmDisplay');
     alarmDisplay.style.visibility = (alarmDisplay.style.visibility == 'hidden' ? '' : 'hidden');
-    setAlarmH1Text.innerHTML = '<i class="fas fa-bell text-danger fa-2x"></i>';
+    setAlarmH1Text.innerHTML = '(( <i class="fas fa-bell text-danger fa-2x"></i> ))';
     setAlarmH1Text.style.visibility = (setAlarmH1Text.style.visibility == 'hidden' ? '' : 'hidden');
     setAlarmH1Text.style.color = '#d9534f';
   }
 
   let stopSound = () => {
-    // let setAlarmH1Text = document.getElementById('setAlarmH1Text');
+    let setAlarmH1Text = document.getElementById('setAlarmH1Text');
     alarmSound.pause();
     let alarmDisplay = document.querySelector('#alarmDisplay');
     alarmDisplay.style.visibility = 'visible';

@@ -1,22 +1,21 @@
 'use strict';
 
- let checkBox = document.getElementById("myBackgroundColorCheck");
+let checkBox = document.getElementById("myBackgroundColorCheck");
   let body = document.querySelector('body');
   let TimeDisplay = document.getElementById('TimeDisplay');
   let setAlarmText = document.getElementById('setAlarmText');
-  let setAlarmH1Text = document.getElementById('setAlarmH1');
   let bellIcon = document.getElementById('bellIcon');
   let displayCurrentDate = document.getElementById('displayCurrentDate');
   let todaysDay = document.getElementById('todaysDay');
 // ---------- Toggle Background Switch Begins --------------- //
 function switchFunction() {
+  
   // If the checkbox is checked, change the background color of the body
 if (checkBox.checked === true){
     body.style.backgroundColor = '#1c1c31';
     checkBox.style.backgroundColor = "#1c1c31";
     TimeDisplay.style.color = '#ffffff';
     setAlarmText.style.color = '#f7f7f7';
-    setAlarmH1Text.style.color = '#f7f7f7'
     bellIcon.style.color = '#f7f7f7';
     displayCurrentDate.style.color = '#f7f7f7';
     todaysDay.style.color = '#f7f7f7';
@@ -28,7 +27,6 @@ if (checkBox.checked === true){
     bellIcon.style.color = '#1c1c31';
     displayCurrentDate.style.color = '#1c1c31';
     todaysDay.style.color = '#1c1c31'
-    setAlarmH1Text.style.color = '#1c1c31';
   }
 
 }
@@ -87,35 +85,34 @@ timeRunning(); // Calling timeRunning function
 let alarmHour = document.getElementById('alarmHour');
 let alarmMinutes = document.getElementById('alarmMinutes');
 let setAlarmBtn = document.getElementById('setAlarmBtn');
-// let setAlarmH1Text = document.getElementById('setAlarmH1Text');
+let setAlarmH1Text = document.getElementById('setAlarmH1Text');
 
 // ------ checking Code ------- //
   let playSound = () => {
-    let setAlarmH1Text = document.getElementById('setAlarmH1Text');
     alarmSound.play();
-    // let setAlarmH1Text = document.getElementById('setAlarmH1Text');
+    let setAlarmH1Text = document.getElementById('setAlarmH1Text');
     let alarmDisplay = document.querySelector('#alarmDisplay');
     alarmDisplay.style.visibility = (alarmDisplay.style.visibility == 'hidden' ? '' : 'hidden');
-    setAlarmH1Text.innerHTML = '<i class="fas fa-bell text-danger fa-2x"></i>';
+    setAlarmH1Text.innerHTML = '(( <i class="fas fa-bell text-danger fa-2x" id="bellIcon"></i> ))';
     setAlarmH1Text.style.visibility = (setAlarmH1Text.style.visibility == 'hidden' ? '' : 'hidden');
     setAlarmH1Text.style.color = '#d9534f';
   }
 
   let stopSound = () => {
-    // let setAlarmH1Text = document.getElementById('setAlarmH1Text');
     alarmSound.pause();
+    let setAlarmH1Text = document.getElementById('setAlarmH1Text');
     let alarmDisplay = document.querySelector('#alarmDisplay');
     alarmDisplay.style.visibility = 'visible';
-    // setAlarmH1Text.innerHTML = '<i class="fas fa-bell fa-2x"></i>';
-    // setAlarmH1Text.style.visibility = 'visible';
-    // setAlarmH1Text.style.color = '#1c1c31';
+    setAlarmH1Text.innerHTML = '<i class="fas fa-bell fa-2x"></i>';
+    setAlarmH1Text.style.visibility = 'visible';
+    setAlarmH1Text.style.color = '#1c1c31';
   }
 
 
 // -------- Set Alarm Function Begins --------//
 let setAlarm = () => {
   
-  setAlarmH1Text.innerHTML = '<i class="fas fa-bell fa-2x"></i>';
+  setAlarmH1Text.innerHTML = '<i class="fas fa-bell fa-2x" id="bellIcon"></i>';
 
   // Add zero to the alarm hour value if it is a single digit
   if (alarmHour.length < 2) {

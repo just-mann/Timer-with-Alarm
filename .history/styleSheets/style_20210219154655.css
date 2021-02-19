@@ -29,11 +29,11 @@ nav {
 
 #deleteAlarm {
     color: #ff0000; 
-    /* transition: all 0.9s ease; */
+    transition: all 0.9s ease;
 }
 
 #deleteAlarm:hover {
-    transition: 0.9s;
+    /* transition: 0.9s; */
     cursor: pointer;
     font-size: 20.5px;
 }
