@@ -33,6 +33,7 @@ function switchFunction() {
       TimeDisplay.style.color = '#ffffff';
       setAlarmText.style.color = '#f7f7f7';
       setAlarmH1Text.style.color = '#f7f7f7'
+      // bellIcon.style.color = '#f7f7f7';
       displayCurrentDate.style.color = '#f7f7f7';
       todaysDay.style.color = 'white';
     } else {
@@ -40,6 +41,7 @@ function switchFunction() {
       checkBox.style.backgroundColor = "#f7f7f7";
       TimeDisplay.style.color = '#1c1c31';
       setAlarmText.style.color = '#1c1c31';
+      // bellIcon.style.color = '#1c1c31';
       displayCurrentDate.style.color = '#1c1c31';
       todaysDay.style.color = '#1c1c31'
       setAlarmH1Text.style.color = '#1c1c31';
@@ -124,12 +126,11 @@ let setAlarmBtn = document.getElementById('setAlarmBtn');
 let setAlarm = () => {
   setAlarmH1Text.innerHTML = `<i class='fas fa-bell fa-2x'></i>`;
   
-  // Add zero to the alarm hour value if it is a single digit.
   if (alarmHour.length < 2) {
     alarmHour = '0' + alarmHour;
   }
 
-  // Add zero to the alarm minutes value if it is a single digit.
+  // Add zero to the alarm minutes value if it is a single digit
   if (alarmMinutes.length < 2) {
     alarmMinutes = '0' + alarmMinutes;
   }

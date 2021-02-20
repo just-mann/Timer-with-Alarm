@@ -124,7 +124,7 @@ let setAlarmBtn = document.getElementById('setAlarmBtn');
 let setAlarm = () => {
   setAlarmH1Text.innerHTML = `<i class='fas fa-bell fa-2x'></i>`;
   
-  // Add zero to the alarm hour value if it is a single digit.
+  // Add zero to the hour value if it is a single digit.
   if (alarmHour.length < 2) {
     alarmHour = '0' + alarmHour;
   }
