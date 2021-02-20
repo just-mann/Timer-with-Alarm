@@ -1,17 +1,18 @@
 /*
 
-  Program: Timer With Alarm
-  Author: Justin Kollie => just.Codes
-      gitHub: just-mann
-  Date Started: February 1, 2020
-  Date Completed: February 19, 2020
+Program: Timer With Alarm
+Author: Justin Kollie => just.Codes
+Date Started: February 1, 2020
+Date Completed: February 19, 2020
 
-  Description: This program is a frond end digital clock which allows user to set an Alarm as well as delete
-                said Alarm. Moreover, when the alarm time is met, the alarm goes off, playing a Sound.
-                This is just a front end project. No backend or database. When the browser is refreshed,
-                the program refreshes.
+Description: This program is a frond end digital clock which allows user to set an Alarm as well as delete
+              said Alarm. Moreover, when the alarm time is met, the alarm goes off, playing a Sound.
+              This is just a front end project. No backend or database. When the browser is refreshed,
+               the program refreshes.
 
 */
+
+
 
 'use strict';
 
