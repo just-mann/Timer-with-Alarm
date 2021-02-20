@@ -6,11 +6,10 @@
   Date Started: February 1, 2020
   Date Completed: February 19, 2020
 
-  Description: This program is a frond end digital clock created using HTML5, CSS, and Mostly JavaScript. 
-               The program allows user to set an Alarm as well as delete
-               said Alarm. Moreover, when the alarm time is met, the alarm goes off, playing a Sound.
-               This is just a front end project. No backend or database. When the browser is refreshed,
-               the program refreshes.
+  Description: This program is a frond end digital clock created using HTML5, CSS, and Mostly JavaScript. The program allows user to set an Alarm as well as delete
+                said Alarm. Moreover, when the alarm time is met, the alarm goes off, playing a Sound.
+                This is just a front end project. No backend or database. When the browser is refreshed,
+                the program refreshes.
 
 */
 
