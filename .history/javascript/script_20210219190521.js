@@ -179,7 +179,7 @@ let validateForm = () => {
 
 // ----- If the Enter Button is pressed, run the validateForm() function ----- //
 
-// If the enter key is pressed, run the validateForm() function which runs the setAlarm() function. //
+
 let enterKey = (e) => {
   if (e.keyCode === 13) {
     validateForm();
@@ -187,8 +187,10 @@ let enterKey = (e) => {
 }
 
 document.addEventListener('keydown', enterKey);
+
+
 // --------------- Input Validation Ends ------------ //
-// --- If the escape [Esc] key is pressed, reset the program => Similar to the delete alarm button in the upper left corner //
+
 let escapeKey = (e) => {
   if (e.keyCode === 27){
       stopSound();
